@@ -59,5 +59,12 @@ body {
   background: #001C33;
   color: #fff;
   font-family: "Changa", sans-serif; }
+  #skills h1 {
+    color: #80C6FF;
+    font-family: "Changa", sans-serif;
+    text-transform: uppercase; }
   #skills .p-4 {
-    font-size: 9em; }
+    font-size: 7em; }
+
+#main-footer {
+  background: #001C33; }
