@@ -54,3 +54,10 @@ body {
 
 #projects .col-lg-8 {
   margin-top: 1em; }
+
+#skills {
+  background: #001C33;
+  color: #fff;
+  font-family: "Changa", sans-serif; }
+  #skills .p-4 {
+    font-size: 9em; }
