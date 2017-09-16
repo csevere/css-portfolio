@@ -117,7 +117,21 @@ textarea{
 
 #contact{
     .fa, a{
-        font-size: $font-icon; 
+        font-size: $font-icon;
+          
+    }
+
+    a{
+        text-decoration: none; 
+        color: #000; 
+        &:hover{
+            text-decoration: underline; 
+        }
+    }
+
+    .card-body{
+        background: $primary;
+        color: #fff;  
     }
 }
 

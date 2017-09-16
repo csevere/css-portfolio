@@ -79,3 +79,13 @@ textarea {
 
 #contact .fa, #contact a {
   font-size: 30px; }
+
+#contact a {
+  text-decoration: none;
+  color: #000; }
+  #contact a:hover {
+    text-decoration: underline; }
+
+#contact .card-body {
+  background: #7facd6;
+  color: #fff; }
