@@ -3,8 +3,10 @@ $text-one: #80C6FF;
 $bg-one: #001C33; 
 $primary-overlay: rgba(50, 146, 166, 0.8); 
 $font-about: 18px; 
+$font-icon: 30px; 
 $font-skills: 7em; 
 $primary-font: 'Changa', sans-serif;
+
 
 body{
     margin-top: 56px; 
@@ -84,17 +86,24 @@ body{
 }
 
 #skills{
-    background: $bg-one; 
+    background: url('../img/galaxy.jpg'); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    min-height: 500px;  
     color: #fff;
     font-family: $primary-font; 
     h1{
-        color: $text-one; 
+        color: #fff; 
         font-family: $primary-font; 
         text-transform: uppercase; 
     }
 
-    .p-4{
+    .p-5{
         font-size: $font-skills; 
+    }
+
+    .icon{
+        margin-top: 20px; 
     }
 }
 
@@ -102,4 +111,13 @@ body{
     background: $bg-one; 
 }
 
+textarea{
+    height: 100px; 
+}
+
+#contact{
+    .fa, a{
+        font-size: $font-icon; 
+    }
+}
 

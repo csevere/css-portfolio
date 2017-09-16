@@ -56,15 +56,26 @@ body {
   margin-top: 1em; }
 
 #skills {
-  background: #001C33;
+  background: url("../img/galaxy.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
   color: #fff;
   font-family: "Changa", sans-serif; }
   #skills h1 {
-    color: #80C6FF;
+    color: #fff;
     font-family: "Changa", sans-serif;
     text-transform: uppercase; }
-  #skills .p-4 {
+  #skills .p-5 {
     font-size: 7em; }
+  #skills .icon {
+    margin-top: 20px; }
 
 #main-footer {
   background: #001C33; }
+
+textarea {
+  height: 100px; }
+
+#contact .fa, #contact a {
+  font-size: 30px; }
