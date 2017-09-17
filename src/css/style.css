@@ -78,12 +78,21 @@ body {
   min-height: 500px;
   color: #fff;
   font-family: "Exo", sans-serif; }
+  @media (max-width: 576px) {
+    #skills {
+      background: #001C33; } }
   #skills h1 {
     color: #7facd6;
     font-family: "Exo", sans-serif;
     text-transform: uppercase; }
   #skills .p-5 {
     font-size: 7em; }
+    @media (max-width: 576px) {
+      #skills .p-5 {
+        font-size: 10em; } }
+    @media (max-width: 320px) {
+      #skills .p-5 {
+        font-size: 7em; } }
   #skills .icon {
     margin-top: 20px; }
   #skills .marina img {
@@ -115,6 +124,17 @@ textarea {
     @media (max-width: 1024px) {
       #contact .card {
         width: 500px; } }
+    @media (max-width: 576px) {
+      #contact .card {
+        width: 339px; } }
+    @media (max-width: 320px) {
+      #contact .card {
+        width: 328px; } }
+    @media (max-width: 320px) {
+      #contact .card {
+        font-size: 16px; }
+        #contact .card h1 {
+          font-size: 1.5em; } }
     #contact .card:hover {
       background: #7facd6; }
       #contact .card:hover h1 {
