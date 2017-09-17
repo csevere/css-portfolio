@@ -79,7 +79,10 @@ body{
     img{
         margin-top: -50px; 
     }
+ 
 }
+
+
 
 #projects{
     .featured{
@@ -87,8 +90,14 @@ body{
             height: 500px; 
         }
     }
-    
 
+    .s-pluto{
+        img{
+            margin-left: -7em; 
+            height: 400px;
+        }  
+    }
+    
     h1{
         color: $text-one; 
         font-family: $primary-font; 
@@ -108,7 +117,7 @@ body{
     color: #fff;
     font-family: $primary-font; 
     h1{
-        color: #fff; 
+        color: $primary; 
         font-family: $primary-font; 
         text-transform: uppercase; 
     }
@@ -120,6 +129,12 @@ body{
     .icon{
         margin-top: 20px; 
     }
+
+    .rosie{
+        img{
+            margin-top: 11em; 
+        }
+    } 
 }
 
 
@@ -129,6 +144,7 @@ textarea{
 
 #contact{
     background: $bg-one;
+    
     .fa, a{
         font-size: $font-icon;
         @media (max-width:576px) {
@@ -146,8 +162,16 @@ textarea{
     }
 
     .card{
-        color: #000;  
-    }  
+        color: #000; 
+        @media (max-width:1024px) {
+            width:500px;     
+        } 
+    } 
+    .yuna{
+        img{
+            height: 500px;
+        }
+    } 
 }
 
 #main-footer{

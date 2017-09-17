@@ -57,6 +57,10 @@ body {
 #projects .featured .card {
   height: 500px; }
 
+#projects .s-pluto img {
+  margin-left: -7em;
+  height: 400px; }
+
 #projects h1 {
   color: #80C6FF;
   font-family: "Exo", sans-serif;
@@ -73,13 +77,15 @@ body {
   color: #fff;
   font-family: "Exo", sans-serif; }
   #skills h1 {
-    color: #fff;
+    color: #7facd6;
     font-family: "Exo", sans-serif;
     text-transform: uppercase; }
   #skills .p-5 {
     font-size: 7em; }
   #skills .icon {
     margin-top: 20px; }
+  #skills .rosie img {
+    margin-top: 11em; }
 
 textarea {
   height: 100px; }
@@ -99,6 +105,11 @@ textarea {
       text-decoration: underline; }
   #contact .card {
     color: #000; }
+    @media (max-width: 1024px) {
+      #contact .card {
+        width: 500px; } }
+  #contact .yuna img {
+    height: 500px; }
 
 #main-footer {
   border-top: 0.5px solid #fff; }
