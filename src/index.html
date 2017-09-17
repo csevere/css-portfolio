@@ -7,7 +7,7 @@
     <title>CSS Portfolio</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css?family=Changa:200|Sarala|Montserrat|Orbitron|Questrial|Roboto|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa:200|Sarala|Montserrat|Orbitron|Questrial|Exo:900|Roboto|VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -47,11 +47,13 @@
     <section id= "home-page" class = "py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 id = "myName" class = "display-2 mt-5 pt-5">Carla Severe</h1>
+                <div class="col-lg-12 text-center name-wrapper">
+                    <h1 id = "myName" class = "display-2 pt-5">Carla Severe</h1>
                     <h1 id = "myTitle" class = "display-3 pt-3"> Web Developer</h1>
                 </div>
+                <canvas id = "intro-canvas" width = "600px" height= "600px"/>
             </div>
+           
         </div>
     </section>
 
@@ -92,14 +94,14 @@
     <section id="projects" class = "py-5 bg-dark">
         <h1 class = "text-center mb-5">Featured Projects</h1>
         <div class="container">
-            <div class="row">
+            <div class="row featured">
                 <!-- WritIT -->
                 <div class="card pt-3 m-auto col-md-5">
                     <img src="img/writeIT.png" class = "card-img-top img-fluid">
-                    <div class="card-body">
+                    <div class="card-body justify-content">
                         <h4 class="card-title">WriteIT</h4>
-                        <h5 class="text-muted">The Tech: JavaScript | JSX | React | Redux | Node.js | Express | MySQL | jQuery</h5>
-                        <p class = "card-text">WriteIT is a productivity tool for writers, offering a variety of ways to organize, structure, and plan manuscripts. It also incorporates a social networking feature that allows writers to add friends, share their work, and receive or give feedback.</p>
+                        <h5 class="text-muted">The Tech: JavaScript | React | Redux | Node.js | Express | MySQL | jQuery</h5>
+                        <p class = "card-text">WriteIT is a productivity tool for writers, offering a variety of ways to organize, structure, and plan manuscripts, along with a social networking feature.</p>
                         <a class = "btn btn-outline-dark" target="_blank" href="https://github.com/csevere/writeIt-react-express">Git Hub</a>
                     </div>
                 </div>
@@ -122,6 +124,7 @@
     
         <!-- FRONTEND PROJECTS -->
         <h1 class = "text-center my-5">Front-end Projects</h1>
+        <hr>
         <div class="row">  
             <div id="myCarousel" class = "carousel slide m-auto" data-ride = "carousel">
                 <div class="carousel-inner">
@@ -204,36 +207,34 @@
         <div class="container">
             <h1 class = "text-center mb-5">Current Skills</h1>
             <div class="row">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div class="row">
-                        <div class = "icon"><i class="p-5 devicon-python-plain-wordmark colored"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-html5-plain-wordmark colored"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-css3-plain-wordmark colored"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-javascript-plain colored"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-bootstrap-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-sass-original colored"></i></div>
-                        <div class = "icon"><i  class="p-5 devicon-jquery-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-nodejs-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-express-original-wordmark"></i></div>
-                        <div class = "icon"><i  class="p-5 devicon-react-original-wordmark colored"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-mysql-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-amazonwebservices-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-github-plain-wordmark"></i></div>
-                        <div class = "icon"><i class="p-5 devicon-sourcetree-plain-wordmark"></i></div>
-                    </div>
+                <div class="d-flex flex-wrap align-items-center col-md-12 m-auto">
+                    <div class = "icon"><i class="p-5 devicon-python-plain-wordmark colored"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-html5-plain-wordmark colored"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-css3-plain-wordmark colored"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-javascript-plain colored"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-bootstrap-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-sass-original colored"></i></div>
+                    <div class = "icon"><i  class="p-5 devicon-jquery-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-nodejs-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-express-original-wordmark"></i></div>
+                    <div class = "icon"><i  class="p-5 devicon-react-original-wordmark colored"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-mysql-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-amazonwebservices-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-github-plain-wordmark"></i></div>
+                    <div class = "icon"><i class="p-5 devicon-sourcetree-plain-wordmark"></i></div>
                 </div>
             </div>
         </div>
     </section>
    
     <!-- CONTACT SECTION -->
-    <section id="contact" class = "bg-dark py-5">
+    <section id="contact" class = "py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 m-auto">
+                <div class="col-sm-7 m-auto">
                     <div class="card p-4">
-                        <div class="card-body">
-                            <h4 class = "text-center">Feel Free to Contact or Connect with Me!</h4>
+                        <div class="card-body m-auto">
+                            <h1 class = "text-center">Feel Free to Contact or Connect with Me!</h1>
                             <hr>
                             <i class="fa fa-envelope"></i> 
                             <a target="_blank" href="mailto:carla.severe@gmail.com">carla.severe@gmail.com</a>
@@ -269,7 +270,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer id="main-footer" class = "text-center p-3 text-white">
+    <footer id="main-footer" class = "justify-left bg-dark p-4 text-white">
         <div class="container">
             <div class="row">
                 <div class="col">

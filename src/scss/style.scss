@@ -5,8 +5,12 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 $font-about: 18px; 
 $font-icon: 30px; 
 $font-skills: 7em; 
-$primary-font: 'Changa', sans-serif;
+$primary-font: 'Exo', sans-serif;
 
+
+html{
+    overflow-x: hidden; 
+}
 
 body{
     margin-top: 56px; 
@@ -27,7 +31,15 @@ body{
     background: url('../img/earth-home.jpg');
     background-attachment: fixed; 
     background-size: cover; 
-    min-height: 650px;   
+    min-height: 650px; 
+    z-index: 0;   
+}
+
+#intro-canvas{
+    z-index: 1; 
+    margin-top: -18em;
+    margin-left: -5em; 
+
 }
  
 #myName, #myTitle{
@@ -45,6 +57,7 @@ body{
     text-overflow: clip;
     text-shadow: -1px 6px 10px #ededed, 0 0 0px white, 0 0 30px #00ffff, 0 0 2px #00ffff, 0 0 70px #80C6FF, 0 0 80px #2753c4, 0 0 100px #ededf7;
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 2; 
 }
 
 #tagline{
@@ -69,10 +82,12 @@ body{
 }
 
 #projects{
-    .card{
-      
-        height: 50%; 
+    .featured{
+        .card{
+            height: 500px; 
+        }
     }
+    
 
     h1{
         color: $text-one; 
@@ -107,31 +122,35 @@ body{
     }
 }
 
-#main-footer{
-    background: $bg-one; 
-}
 
 textarea{
     height: 100px; 
 }
 
 #contact{
+    background: $bg-one;
     .fa, a{
         font-size: $font-icon;
-          
+        @media (max-width:576px) {
+            font-size: 20px; 
+        }    
     }
 
     a{
         text-decoration: none; 
+        margin-left: 15px; 
         color: #000; 
         &:hover{
             text-decoration: underline; 
         }
     }
 
-    .card-body{
-        background: $primary;
-        color: #fff;  
-    }
+    .card{
+        color: #000;  
+    }  
+}
+
+#main-footer{
+    border-top: 0.5px solid #fff; 
 }
 

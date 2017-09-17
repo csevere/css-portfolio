@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden; }
+
 body {
   margin-top: 56px; }
 
@@ -13,7 +16,13 @@ body {
   background: url("../img/earth-home.jpg");
   background-attachment: fixed;
   background-size: cover;
-  min-height: 650px; }
+  min-height: 650px;
+  z-index: 0; }
+
+#intro-canvas {
+  z-index: 1;
+  margin-top: -18em;
+  margin-left: -5em; }
 
 #myName, #myTitle {
   opacity: 1;
@@ -25,7 +34,8 @@ body {
   -o-text-overflow: clip;
   text-overflow: clip;
   text-shadow: -1px 6px 10px #ededed, 0 0 0px white, 0 0 30px #00ffff, 0 0 2px #00ffff, 0 0 70px #80C6FF, 0 0 80px #2753c4, 0 0 100px #ededf7;
-  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 2; }
   @media (max-width: 576px) {
     #myName, #myTitle {
       letter-spacing: 0px;
@@ -33,7 +43,7 @@ body {
 
 #tagline .info-header {
   color: #80C6FF;
-  font-family: "Changa", sans-serif;
+  font-family: "Exo", sans-serif;
   text-transform: uppercase; }
 
 #about {
@@ -44,12 +54,12 @@ body {
   #about img {
     margin-top: -50px; }
 
-#projects .card {
-  height: 50%; }
+#projects .featured .card {
+  height: 500px; }
 
 #projects h1 {
   color: #80C6FF;
-  font-family: "Changa", sans-serif;
+  font-family: "Exo", sans-serif;
   text-transform: uppercase; }
 
 #projects .col-lg-8 {
@@ -61,31 +71,34 @@ body {
   background-size: cover;
   min-height: 500px;
   color: #fff;
-  font-family: "Changa", sans-serif; }
+  font-family: "Exo", sans-serif; }
   #skills h1 {
     color: #fff;
-    font-family: "Changa", sans-serif;
+    font-family: "Exo", sans-serif;
     text-transform: uppercase; }
   #skills .p-5 {
     font-size: 7em; }
   #skills .icon {
     margin-top: 20px; }
 
-#main-footer {
-  background: #001C33; }
-
 textarea {
   height: 100px; }
 
-#contact .fa, #contact a {
-  font-size: 30px; }
+#contact {
+  background: #001C33; }
+  #contact .fa, #contact a {
+    font-size: 30px; }
+    @media (max-width: 576px) {
+      #contact .fa, #contact a {
+        font-size: 20px; } }
+  #contact a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #000; }
+    #contact a:hover {
+      text-decoration: underline; }
+  #contact .card {
+    color: #000; }
 
-#contact a {
-  text-decoration: none;
-  color: #000; }
-  #contact a:hover {
-    text-decoration: underline; }
-
-#contact .card-body {
-  background: #7facd6;
-  color: #fff; }
+#main-footer {
+  border-top: 0.5px solid #fff; }
