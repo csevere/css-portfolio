@@ -86,8 +86,9 @@ body {
     font-size: 7em; }
   #skills .icon {
     margin-top: 20px; }
-  #skills .rosie img {
-    margin-top: 11em; }
+  #skills .marina img {
+    margin-top: 15em;
+    height: 250px; }
 
 textarea {
   height: 100px; }
