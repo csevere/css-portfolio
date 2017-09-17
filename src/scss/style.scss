@@ -91,9 +91,9 @@ body{
         }
     }
 
-    .s-pluto{
+    .garnet{
         img{
-            margin-left: -7em; 
+            margin-left: -10em; 
             height: 400px;
         }  
     }
@@ -181,6 +181,7 @@ textarea{
 }
 
 #main-footer{
-    border-top: 0.5px solid #fff; 
+    background: #000; 
+    border-top: 0.5px solid $primary; 
 }
 
