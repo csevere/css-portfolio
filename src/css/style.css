@@ -109,12 +109,16 @@ textarea {
     color: #000; }
     #contact a:hover {
       text-decoration: underline;
-      color: #7facd6; }
+      color: #fff; }
   #contact .card {
     color: #000; }
     @media (max-width: 1024px) {
       #contact .card {
         width: 500px; } }
+    #contact .card:hover {
+      background: #7facd6; }
+      #contact .card:hover h1 {
+        color: #001C33; }
   #contact .yuna img {
     height: 500px; }
 

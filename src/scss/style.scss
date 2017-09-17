@@ -164,7 +164,7 @@ textarea{
         color: #000; 
         &:hover{
             text-decoration: underline; 
-            color: $primary; 
+            color: #fff; 
         }
     }
 
@@ -173,12 +173,21 @@ textarea{
         @media (max-width:1024px) {
             width:500px;     
         } 
+
+        &:hover{
+            background: $primary;
+            h1{
+                color: $bg-one; 
+            }
+        } 
+       
     } 
+
     .yuna{
         img{
             height: 500px;
         }
-    } 
+    }
 }
 
 #main-footer{
