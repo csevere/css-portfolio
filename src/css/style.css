@@ -41,33 +41,35 @@ body {
       letter-spacing: 0px;
       font-size: 3em; } }
 
-#tagline .info-header {
-  color: #80C6FF;
-  font-family: "Exo", sans-serif;
-  text-transform: uppercase; }
+#tagline {
+  background: #000; }
+  #tagline .info-header {
+    color: #80C6FF;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase; }
 
 #about {
-  background: #001C33; }
+  background: #001C33;
+  font-family: 'Montserrat', sans-serif; }
   #about #aboutme {
     color: #fff;
     font-size: 18px; }
   #about img {
     margin-top: -50px; }
 
-#projects .featured .card {
-  height: 500px; }
-
-#projects .s-pluto img {
-  margin-left: -7em;
-  height: 400px; }
-
-#projects h1 {
-  color: #80C6FF;
-  font-family: "Exo", sans-serif;
-  text-transform: uppercase; }
-
-#projects .col-lg-8 {
-  margin-top: 1em; }
+#projects {
+  background: #000; }
+  #projects .featured .card {
+    height: 500px; }
+  #projects .s-pluto img {
+    margin-left: -7em;
+    height: 400px; }
+  #projects h1 {
+    color: #80C6FF;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase; }
+  #projects .col-lg-8 {
+    margin-top: 1em; }
 
 #skills {
   background: url("../img/galaxy.jpg");
@@ -92,6 +94,9 @@ textarea {
 
 #contact {
   background: #001C33; }
+  #contact h1 {
+    color: #7facd6;
+    font-family: "Exo", sans-serif; }
   #contact .fa, #contact a {
     font-size: 30px; }
     @media (max-width: 576px) {
@@ -102,7 +107,8 @@ textarea {
     margin-left: 15px;
     color: #000; }
     #contact a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #7facd6; }
   #contact .card {
     color: #000; }
     @media (max-width: 1024px) {

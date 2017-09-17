@@ -61,6 +61,7 @@ body{
 }
 
 #tagline{
+    background: #000; 
     .info-header{
         color: $text-one; 
         font-family: $primary-font; 
@@ -70,7 +71,7 @@ body{
 
 #about{
     background: $bg-one;
-   
+    font-family: 'Montserrat', sans-serif;
     #aboutme{
         color: #fff;
         font-size: $font-about;  
@@ -82,9 +83,8 @@ body{
  
 }
 
-
-
 #projects{
+    background: #000; 
     .featured{
         .card{
             height: 500px; 
@@ -144,6 +144,11 @@ textarea{
 
 #contact{
     background: $bg-one;
+
+    h1{
+        color: $primary; 
+        font-family: $primary-font; 
+    }
     
     .fa, a{
         font-size: $font-icon;
@@ -158,6 +163,7 @@ textarea{
         color: #000; 
         &:hover{
             text-decoration: underline; 
+            color: $primary; 
         }
     }
 
