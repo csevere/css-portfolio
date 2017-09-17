@@ -42,7 +42,9 @@ body {
       font-size: 3em; } }
 
 #tagline {
-  background: #000; }
+  background: #000;
+  background-image: url("../img/orbit.png");
+  background-size: 200px 200px; }
   #tagline .info-header {
     color: #80C6FF;
     font-family: "Exo", sans-serif;
@@ -58,7 +60,9 @@ body {
     margin-top: -50px; }
 
 #projects {
-  background: #000; }
+  background: #000;
+  background-image: url("../img/orbit.png");
+  background-size: 200px 200px; }
   #projects .featured .card {
     height: 500px; }
   #projects .garnet img {
@@ -103,7 +107,9 @@ textarea {
   height: 100px; }
 
 #contact {
-  background: #001C33; }
+  background: #000;
+  background-image: url("../img/orbit.png");
+  background-size: 200px 200px; }
   #contact h1 {
     color: #7facd6;
     font-family: "Exo", sans-serif; }
@@ -143,5 +149,5 @@ textarea {
     height: 500px; }
 
 #main-footer {
-  background: #000;
+  background: #001C33;
   border-top: 0.5px solid #7facd6; }

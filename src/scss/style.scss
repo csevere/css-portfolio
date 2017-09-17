@@ -64,6 +64,8 @@ body{
 
 #tagline{
     background: #000; 
+    background-image: url('../img/orbit.png'); 
+    background-size: 200px 200px; 
     .info-header{
         color: $text-one; 
         font-family: $primary-font; 
@@ -87,6 +89,8 @@ body{
 
 #projects{
     background: #000; 
+    background-image: url('../img/orbit.png'); 
+    background-size: 200px 200px; 
     .featured{
         .card{
             height: 500px; 
@@ -155,7 +159,9 @@ textarea{
 }
 
 #contact{
-    background: $bg-one;
+    background: #000; 
+    background-image: url('../img/orbit.png'); 
+    background-size: 200px 200px; 
 
     h1{
         color: $primary; 
@@ -215,7 +221,7 @@ textarea{
 }
 
 #main-footer{
-    background: #000; 
+    background:$bg-one; 
     border-top: 0.5px solid $primary; 
 }
 
