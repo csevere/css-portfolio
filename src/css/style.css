@@ -18,6 +18,9 @@ body {
   background-size: cover;
   min-height: 650px;
   z-index: 0; }
+  #home-page .fa {
+    font-size: 5em;
+    margin-top: 2em !important; }
 
 #intro-canvas {
   z-index: 1;
