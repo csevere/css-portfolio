@@ -32,6 +32,9 @@ html{
     background-size: cover; 
     min-height: 650px; 
     z-index: 0; 
+    @media (max-width:576px){
+        background-size: 500px 900px; 
+    }
     
     .fa{
         font-size: 5em; 
@@ -43,6 +46,9 @@ html{
     z-index: 1; 
     margin-top: -18em;
     margin-left: -5em; 
+    @media (max-width:576px){
+       margin-left: 0em; 
+    }
 
 }
  
