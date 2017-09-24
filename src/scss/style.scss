@@ -32,8 +32,12 @@ html{
     background-size: cover; 
     min-height: 650px; 
     z-index: 0; 
-    @media (max-width:576px){
+    @media(max-width: 575px){
         background-size: 500px 900px; 
+    }
+    @media (max-width:1024px){
+        width: 114%; 
+        overflow-x: hidden; 
     }
     
     .fa{
@@ -74,6 +78,9 @@ html{
     background: #000; 
     background-image: url('../img/orbit.png'); 
     background-size: 200px 200px; 
+    @media (max-width:1024px) {
+        width: 114%;  
+    }
     .info-header{
         color: $text-one; 
         font-family: $primary-font; 
@@ -84,6 +91,9 @@ html{
 #about{
     background: $bg-one;
     font-family: 'Montserrat', sans-serif;
+    @media (max-width:1024px){
+        width: 114%; 
+    }
     #aboutme{
         color: #fff;
         font-size: $font-about;  
@@ -99,6 +109,9 @@ html{
     background: #000; 
     background-image: url('../img/orbit.png'); 
     background-size: 200px 200px; 
+    @media (max-width:1024px){ 
+        width: 114%; 
+    }
     .featured{
         .card{
             height: 500px; 
@@ -130,8 +143,10 @@ html{
     min-height: 500px;  
     color: #fff;
     font-family: $primary-font; 
-    @media (max-width:576px) {
-        background: $bg-one; 
+
+    @media (max-width:1024px) {
+        background: $bg-one;
+        width: 114%;  
     }
     h1{
         color: $primary; 
@@ -170,6 +185,9 @@ textarea{
     background: #000; 
     background-image: url('../img/orbit.png'); 
     background-size: 200px 200px; 
+    @media (max-width:1024px) {
+        width: 114%;  
+    }
 
     h1{
         color: $primary; 
@@ -199,9 +217,9 @@ textarea{
             width:500px;     
         } 
         @media (max-width:576px) {
-            width: 345px; 
+            width: 408px; 
         } 
-        @media (max-width:320px){
+        @media (max-width:360px){
             width: 328px;
         }
 
@@ -231,5 +249,8 @@ textarea{
 #main-footer{
     background:$bg-one; 
     border-top: 0.5px solid $primary; 
+    @media (max-width:1024px){
+        width: 114%; 
+    }
 }
 

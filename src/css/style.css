@@ -15,9 +15,13 @@ html {
   background-size: cover;
   min-height: 650px;
   z-index: 0; }
-  @media (max-width: 576px) {
+  @media (max-width: 575px) {
     #home-page {
       background-size: 500px 900px; } }
+  @media (max-width: 1024px) {
+    #home-page {
+      width: 114%;
+      overflow-x: hidden; } }
   #home-page .fa {
     font-size: 5em;
     margin-top: 2em !important; }
@@ -51,6 +55,9 @@ html {
   background: #000;
   background-image: url("../img/orbit.png");
   background-size: 200px 200px; }
+  @media (max-width: 1024px) {
+    #tagline {
+      width: 114%; } }
   #tagline .info-header {
     color: #80C6FF;
     font-family: "Exo", sans-serif;
@@ -59,6 +66,9 @@ html {
 #about {
   background: #001C33;
   font-family: 'Montserrat', sans-serif; }
+  @media (max-width: 1024px) {
+    #about {
+      width: 114%; } }
   #about #aboutme {
     color: #fff;
     font-size: 18px; }
@@ -69,6 +79,9 @@ html {
   background: #000;
   background-image: url("../img/orbit.png");
   background-size: 200px 200px; }
+  @media (max-width: 1024px) {
+    #projects {
+      width: 114%; } }
   #projects .featured .card {
     height: 500px; }
   #projects .garnet img {
@@ -88,9 +101,10 @@ html {
   min-height: 500px;
   color: #fff;
   font-family: "Exo", sans-serif; }
-  @media (max-width: 576px) {
+  @media (max-width: 1024px) {
     #skills {
-      background: #001C33; } }
+      background: #001C33;
+      width: 114%; } }
   #skills h1 {
     color: #7facd6;
     font-family: "Exo", sans-serif;
@@ -116,6 +130,9 @@ textarea {
   background: #000;
   background-image: url("../img/orbit.png");
   background-size: 200px 200px; }
+  @media (max-width: 1024px) {
+    #contact {
+      width: 114%; } }
   #contact h1 {
     color: #7facd6;
     font-family: "Exo", sans-serif; }
@@ -138,8 +155,8 @@ textarea {
         width: 500px; } }
     @media (max-width: 576px) {
       #contact .card {
-        width: 345px; } }
-    @media (max-width: 320px) {
+        width: 408px; } }
+    @media (max-width: 360px) {
       #contact .card {
         width: 328px; } }
     @media (max-width: 320px) {
@@ -157,3 +174,6 @@ textarea {
 #main-footer {
   background: #001C33;
   border-top: 0.5px solid #7facd6; }
+  @media (max-width: 1024px) {
+    #main-footer {
+      width: 114%; } }
