@@ -6,8 +6,12 @@ html {
   opacity: 0.8; }
   .navbar .nav-item {
     font-size: 1rem;
-    padding-right: 20px;
-    color: #fff !important; }
+    padding-right: 20px; }
+    .navbar .nav-item a {
+      text-decoration: none; }
+      .navbar .nav-item a:hover {
+        text-decoration: underline;
+        color: #7facd6 !important; }
 
 #home-page {
   background: url("../img/earth-home.jpg");
